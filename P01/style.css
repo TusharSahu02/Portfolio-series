@@ -1,0 +1,372 @@
+@font-face {
+  font-family: "Horizon";
+  src: url(assets/fonts/horizon.otf);
+}
+@font-face {
+  font-family: "Horizon outline";
+  src: url(assets/fonts/horizon_outlined.otf);
+}
+@font-face {
+  font-family: "TT octosqaures";
+  src: url(assets/fonts/TT\ Octosquares\ Trial\ Black.ttf);
+}
+@font-face {
+  font-family: "TT octosqaures EL";
+  src: url(assets/fonts/TT\ Octosquares\ Trial\ Compressed\ ExtraLight.ttf);
+}
+@font-face {
+  font-family: "TT octosqaures ELT";
+  src: url(assets/fonts/TT\ Octosquares\ Trial\ Thin.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #0c0034;
+  --gradiant-color-1: #733ffb;
+  --gradiant-color-2: #ff00c8;
+  --red: rgb(255, 0, 0);
+  --font1: "TT octosqaures EL";
+  --font2: "TT octosqaures";
+  --font3: "TT octosqaures ELT";
+  --font4: "Horizon outline";
+  --font5: "Horizon";
+}
+/* This code is for hiding the scroll bar */
+body::-webkit-scrollbar {
+  display: none; /*Chrome, Safari, Opera*/
+}
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+  color: #fff;
+  overflow-x: hidden;
+}
+.container {
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff35;
+  border-radius: 30px;
+  height: 40px;
+  width: 500px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 50px;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all 0.25s ease-in-out;
+}
+.navbar ul li a:hover {
+  color: #733ffb;
+}
+.navbar ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.circle {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  background-color: #ffffff27;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+}
+.circle img {
+  position: absolute;
+  z-index: 1;
+  width: 80px;
+}
+.bg-shade {
+  position: absolute;
+  right: -100px;
+  scale: 1.3;
+  top: -200px;
+}
+.home {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-left,
+.home-right {
+  width: 50%;
+}
+.home-left {
+  position: relative;
+}
+.home-right {
+  position: relative;
+}
+.home-right h1 {
+  font-size: 5rem;
+  font-family: var(--font5), sans-serif;
+}
+.img1 {
+  width: 240px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.img2 {
+  left: 70px;
+  bottom: 0;
+  width: 80px;
+  position: absolute;
+}
+.img3 {
+  z-index: 12;
+}
+.img-ring {
+  scale: 0.7;
+  top: -180px;
+  right: 30px;
+  position: absolute;
+}
+.start {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.pattern {
+  width: 400px;
+}
+.gradiant {
+  width: 110%;
+  height: 130px;
+  background: rgb(115, 63, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(115, 63, 251, 1) 0%,
+    rgba(255, 0, 200, 1) 100%
+  );
+  margin-top: -140px;
+  transform: rotate(-6deg);
+}
+.about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-left h2 {
+  font-size: 4rem;
+  font-family: var(--font3), sans-serif;
+}
+
+.about-left,
+.about-right {
+  width: 50%;
+}
+
+.project-heading h4,
+.skills-heading h4,
+.project-heading h2,
+.skills-heading h2 {
+  font-family: var(--font3), sans-serif;
+}
+.project-heading h2,
+.skills-heading h2 {
+  font-size: 5.5rem;
+}
+.project-heading h4,
+.skills-heading h4 {
+  font-size: 3.5rem;
+}
+
+.projects,
+.skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--red);
+}
+.project-content {
+  margin-top: 50px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 40px;
+}
+.pc-item-top {
+  width: 100%;
+  height: 25px;
+  border-bottom: 2px solid red;
+}
+.pc-item-top p {
+  margin-left: 10px;
+  font-family: var(--font3), sans-serif;
+}
+.pc-item-bottom {
+  width: 100%;
+  height: 25px;
+  border-top: 2px solid red;
+}
+.pc-item {
+  width: 400px;
+  border: 1px solid red;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease-in-out;
+}
+.pc-item:hover {
+  transform: scale(1.1);
+}
+.pc-item img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+/* Skills */
+
+.skills-item {
+  height: 80px;
+  width: 90px;
+  background: rgb(115, 63, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(115, 63, 251, 1) 0%,
+    rgba(255, 0, 200, 1) 100%
+  );
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+}
+.skills {
+  margin-top: 100px;
+}
+.skills-heading {
+  text-align: end;
+}
+.skills-item img {
+  width: 60px;
+}
+.skills-content {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(9, 1fr);
+  row-gap: 30px;
+}
+
+/* Contacts */
+.contacts {
+  margin: 100px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts h2 {
+  font-size: 2rem;
+  font-family: var(--font3), sans-serif;
+}
+.contacts h2 a:hover {
+  color: rgba(115, 63, 251, 1);
+}
+.contacts h2 a {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.get-in-touch {
+  width: 300px;
+  padding: 20px 0;
+  background: rgb(115, 63, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(115, 63, 251, 1) 0%,
+    rgba(255, 0, 200, 1) 100%
+  );
+  opacity: 70%;
+  display: grid;
+  place-items: center;
+  border-radius: 40px;
+  font-size: 2rem;
+  font-family: var(--font3), sans-serif;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.get-in-touch:hover {
+  opacity: 100%;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer h1 {
+  font-size: 14rem;
+  z-index: 1;
+  font-family: var(--font4);
+  margin-bottom: -430px;
+}
+.footer-bg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0) scale(2.5);
+  bottom: 40%;
+  height: 100%;
+}

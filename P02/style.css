@@ -1,0 +1,384 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* FONTS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #000;
+  color: #fff;
+}
+:root {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-family: "Poppins", sans-serif;
+}
+.center {
+  display: grid;
+  place-items: center;
+}
+/* NavBar CSS : Start */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.nav-links ul {
+  display: flex;
+  cursor: pointer;
+}
+.nav-links ul li {
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  margin: 0 30px;
+}
+.nav-links ul li:hover {
+  color: #ffffff67;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn {
+  cursor: pointer;
+  padding: 15px 25px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  margin-left: 90px;
+}
+.nav-btn p {
+  transition: all 0.3s ease-in-out;
+}
+.nav-btn:hover p {
+  color: #ffffff67;
+}
+.default {
+  color: #ffffff67;
+}
+/* NavBar CSS : End */
+
+/* Hero CSS : Start */
+.hero {
+  margin-top: 20px;
+  width: 98%;
+  height: 800px;
+  border: 1px solid #ffffff33;
+  border-radius: 20px;
+}
+.hero-up h1 {
+  font-size: 160px;
+  line-height: 150px;
+  text-align: center;
+  letter-spacing: -5px;
+  font-weight: 100;
+}
+.hero-up h2 {
+  font-size: 120px;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: -5px;
+}
+.hero-bottom {
+  margin-top: 60px;
+}
+.hero-bottom p {
+  width: 75%;
+  line-height: 26.4px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 14px;
+  color: #545454;
+}
+/* Hero CSS : End */
+
+/* MAIN SERVICE CSS: START */
+.main-service {
+  padding: 100px 0;
+}
+/* MAIN SERVICE CSS: END */
+
+/* SERVICE DETAILS CSS : START */
+.service-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.SD {
+  width: 98%;
+  height: 160px;
+  border-radius: 30px;
+  border: 1px solid #ffffff33;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.h1-fade {
+  color: #ffffff67;
+}
+.SD h1 {
+  font-weight: 200;
+  font-size: 70px;
+}
+.SD:nth-child(2) {
+  margin: 40px 0;
+}
+/* SERVICE DETAILS CSS : END */
+
+/* ABOUT CSS : START */
+.about {
+  padding: 200px 0;
+}
+.about h2 {
+  font-weight: 200;
+  color: #919191;
+  font-size: 65px;
+  line-height: 84.5px;
+  letter-spacing: -5px;
+}
+.about h2:first-child {
+  margin-left: 500px;
+}
+.about h2:last-child {
+  margin-left: -300px;
+}
+/* ABOUT CSS : END */
+
+/* SELECTED WORK CSS : START */
+.selected-works {
+  width: 100%;
+  padding: 50px 0;
+}
+.selected-works p {
+  font-size: 14px;
+  line-height: 26.4px;
+  text-align: center;
+  font-weight: 200;
+}
+/* SELECTED WORK CSS : END */
+
+/* WORK SHOWCASE CSS : START */
+.work-show {
+  width: 97%;
+  height: 800px;
+  border-radius: 30px;
+  border: 1px solid #ffffff67;
+}
+.work-show:nth-child(2),
+.work-show:nth-child(3) {
+  margin: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.work-show:nth-child(2) .img,
+.work-show:nth-child(3) .img {
+  width: 48.5%;
+}
+.work-show:nth-child(2) .img img,
+.work-show:nth-child(3) .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.work-show .img {
+  border: 1px solid #ffffff67;
+  border-radius: 20px;
+  width: 98%;
+  height: 96%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.work-show .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ws-video {
+  height: 900px;
+}
+/* WORK SHOWCASE CSS : END */
+
+/* PARAMS CSS : START */
+.params {
+  width: 100%;
+  padding: 60px 40px;
+}
+.params h1 {
+  font-size: 135px;
+  line-height: 175.5px;
+  letter-spacing: -5px;
+  font-weight: 300;
+}
+.params h1:nth-child(odd) {
+  color: #ffffff67;
+}
+/* PARAMS CSS : END */
+
+/* SOME MORE WORKS START*/
+.flex-col {
+  margin: 30px 0 90px 0;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* flex-direction: row; */
+}
+.flex-col .img {
+  width: 32%;
+  height: 93%;
+  border: none;
+}
+.flex-col .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* SOME MORE WORKS END*/
+
+/* CONTACTS CSS : START */
+.contacts {
+  width: 97%;
+  padding: 50px 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid #ffffff67;
+}
+.c-left,
+.c-right {
+  width: 50%;
+}
+.c-left {
+  margin-top: -300px;
+  padding-left: 50px;
+}
+.c-left h2 {
+  width: 90%;
+  color: #ffffff67;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: -2px;
+  text-align: left;
+  font-weight: 200;
+}
+.c-left h3 {
+  width: 90%;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: -2px;
+  text-align: left;
+  font-weight: 200;
+  margin-top: 20px;
+}
+.c-box {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #ffffff67;
+  border-radius: 20px;
+  padding: 0 30px;
+}
+.c-box input {
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  border: none;
+}
+.c-box input:focus {
+  outline: none;
+}
+.c-box:nth-child(2) {
+  margin: 20px 0;
+}
+.t-area {
+  height: 350px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.t-area textarea {
+  font-size: 40px;
+  border: none;
+  color: #fff;
+  width: 100%;
+  resize: none;
+  height: 100%;
+}
+.t-area textarea:focus {
+  outline: none;
+}
+
+.btn {
+  margin-top: 20px;
+}
+.c-box button {
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  font-size: 35px;
+  color: #ffffff67;
+  border: none;
+}
+
+/* CONTACTS CSS : END */
+
+/* FOOTER CSS : START */
+.footer {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.f-right {
+  border-radius: 20px;
+  padding: 20px 0;
+  height: 90px;
+  border: 1px solid #ffffff67;
+  width: 59.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-right img {
+  width: 35px;
+  margin: 5px;
+  height: 35px;
+  margin: 0 10px;
+  cursor: pointer;
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+}
+.f-right img:hover {
+  margin-top: -10px;
+}
+.f-left {
+  width: 39.5%;
+  border-radius: 20px;
+  padding: 20px 0;
+  height: 90px;
+  border: 1px solid #ffffff67;
+}
+.f-left p {
+  font-weight: 200;
+}
+/* FOOTER CSS : END */
